@@ -50,6 +50,12 @@ public class StudentController {
 	    return stuAppRepo.findAll();
 	  }
 	
+	//testing call
+	@GetMapping
+	public String testCall() {
+		return "National Scholarship Portal Works";
+	}
+	
 	
 	@PostMapping("/loginstudent")
 	public Boolean loginStudent(@Validated @RequestBody StudentModel studentModel) throws ResourceNotFoundException {
