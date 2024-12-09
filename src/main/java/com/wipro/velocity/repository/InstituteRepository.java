@@ -7,6 +7,8 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.wipro.velocity.model.InstituteModel;
 
+//@RepositoryRestResource(collectionResourceRel = "Instituteregisterdata", 
+//path = "Instituteregisterdata")
 public interface InstituteRepository extends MongoRepository<InstituteModel,String> {
 	
 	public Optional<InstituteModel> findByEmail(String email);

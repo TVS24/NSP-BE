@@ -18,17 +18,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.wipro.velocity.model.InstituteModel;
 import com.wipro.velocity.model.NodalModel;
 import com.wipro.velocity.model.StudentApplication;
-import com.wipro.velocity.model.StudentModel;
 import com.wipro.velocity.repository.InstituteRepository;
 import com.wipro.velocity.repository.NodalRepository;
 import com.wipro.velocity.repository.StudentApplicationRepository;
-import com.wipro.velocity.repository.StudentRepository;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://thughari.github.io")
 public class NodalController {
-	@Autowired
-	private StudentRepository stuRep;
+
 
 	@Autowired
 	private StudentApplicationRepository stuAppRepo;

@@ -19,7 +19,7 @@ public class StudentControllerTest {
 	
 
 	
-	/*@Autowired
+	@Autowired
 	private StudentController stuCtrl;
 	
 	@Test
@@ -38,46 +38,6 @@ public class StudentControllerTest {
 		StudentModel stuMod=new StudentModel();
 		stuMod.setEmail("avinashkapudasi@gmail.com");
 		stuMod.setPassword("avinash");
-		stuCtrl.loginStudent(stuMod);
-		assertEquals(stuCtrl.loginStudent(stuMod),true);
-	}
-	
-	@Test
-	public void testGetAppliations() {
-		assertNotEquals(stuCtrl.getAllApplications(),0);
-	}*/
-	
-	
-	
-	
-	//--------------------------------------------------
-	
-	@Autowired
-	private StudentController stuCtrl;
-	
-	@Test
-	public void testRegisterstudent() {
-		StudentModel stuMod=new StudentModel();
-		stuMod.setAadhar("250108065353");
-		stuMod.setName("VENKATA SAI TATIKONDA");
-		stuMod.setEmail("venkatasaitatikonda2000@gmail.com");
-		stuMod.setStateofDomicile("Andhra Pradesh");
-		stuMod.setDist("Amaravati");
-		stuMod.setDob("2000-08-24");
-		stuMod.setGender("MALE");
-		stuMod.setMobileNumber("9985604842");
-		stuMod.setIfsc("SBIN2006");
-		stuMod.setInstitutionCode("ANSN");
-		stuMod.setPassword("tvs");
-		String res= stuCtrl.regstu(stuMod);
-		assertEquals("student is registered successfully",res);
-	}
-	
-	@Test
-    public void testStudentLogin(){
-		StudentModel stuMod=new StudentModel();
-		stuMod.setEmail("venkatasaitatikonda2000@gmail.com");
-		stuMod.setPassword("tvs");
 		stuCtrl.loginStudent(stuMod);
 		assertEquals(stuCtrl.loginStudent(stuMod),true);
 	}

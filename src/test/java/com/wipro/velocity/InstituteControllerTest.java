@@ -19,7 +19,7 @@ public class InstituteControllerTest {
 	@Autowired
 	private InstituteController instCtrl;
 	
-	/*@Test
+	@Test
 	public void testInstituteRegister() {
 		InstituteModel instMod=new InstituteModel();
 		instMod.setInstitutionCode("SACET");
@@ -36,33 +36,6 @@ public class InstituteControllerTest {
 		InstituteModel instMod=new InstituteModel();
 		instMod.setEmail("bec@gmail.com");
 		instMod.setPassword("Bec@123");
-		assertEquals(instCtrl.loginInstitute(instMod),true);
-
-	}
-	
-	@Test
-	public void testGetAppliations() {
-		assertNotEquals(instCtrl.getAllInstitutions(),0);
-	}*/
-	
-	
-	@Test
-	public void testInstituteRegister() {
-		InstituteModel instMod=new InstituteModel();
-		instMod.setInstitutionCode("SACET");
-		instMod.setName("St.Ann's college");
-		instMod.setEmail("sacet@ac.in");
-		instMod.setPrincipleName("Gopal Rao");
-		String res= instCtrl.reginst(instMod);
-		assertEquals("institute is registered successfully",res);
-	}
-	
-	@Test
-	public void testInstituteLogin() {
-		
-		InstituteModel instMod=new InstituteModel();
-		instMod.setEmail("sacet@edu.in");
-		instMod.setPassword("sacet");
 		assertEquals(instCtrl.loginInstitute(instMod),true);
 
 	}

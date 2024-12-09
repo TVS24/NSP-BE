@@ -24,7 +24,7 @@ public class NodalControllerTest {
 	private NodalController nodCtrl;
 	
 	
-	/*@Test
+	@Test
     public void testNodalLogin(){
 		NodalModel nodMod=new NodalModel();
 		nodMod.setNodalId("avinash@gmail.com");
@@ -56,43 +56,6 @@ public class NodalControllerTest {
 		StudentApplication stuApp=new StudentApplication();
 		stuApp.setStatus(true);
 		assertNotEquals(nodCtrl.updateStatus("768870816385", stuApp),true);
-	}*/
-	
-	//------------------------------------
-	
-	@Test
-    public void testNodalLogin(){
-		NodalModel nodMod=new NodalModel();
-		nodMod.setNodalId("officer");
-		nodMod.setPassword("government");
-		assertEquals(nodCtrl.loginNodal(nodMod),true);
 	}
-	
-	@Test
-	public void testGetInstituteAppliations() {
-		assertNotEquals(nodCtrl.getAllInstitutions(),0);
-	}
-	
-	@Test
-	public void testGetStudentAppliations() {
-		assertNotEquals(nodCtrl.getAllStudents(),0);
-	}
-	
-	@Test
-	public void testUpdateInstituteStatus() {
-		
-		InstituteModel instMod=new InstituteModel();
-		instMod.setStatus(true);
-		assertNotEquals(nodCtrl.updateStatus("SACET", instMod),true);
-	}
-	
-	@Test
-	public void testUpdateStudentStatus() {
-		
-		StudentApplication stuApp=new StudentApplication();
-		stuApp.setStatus(true);
-		assertNotEquals(nodCtrl.updateStatus("250108065353", stuApp),true);
-	}
-
 
 }
