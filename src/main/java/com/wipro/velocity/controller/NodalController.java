@@ -23,7 +23,7 @@ import com.wipro.velocity.repository.NodalRepository;
 import com.wipro.velocity.repository.StudentApplicationRepository;
 
 @RestController
-@CrossOrigin(origins = "https://thughari.github.io")
+@CrossOrigin(origins = "https://tvs24.github.io")
 public class NodalController {
 
 

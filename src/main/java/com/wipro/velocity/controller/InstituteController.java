@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.wipro.velocity.model.*;
 
 @RestController
-@CrossOrigin(origins = "https://thughari.github.io")
+@CrossOrigin(origins = "https://tvs24.github.io")
 public class InstituteController {
 
     @Autowired
